@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="keywords" content="Vineeth Kashyap UCSB">
+  <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header"> 
+
+  <div id="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="http://phdstuff.wordpress.com/">Blog</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li> <script>document.write('<a href="mailto:' + 'vineet' + ["h", "k"][0] + '@' + 'cs.ucsb.edu"> Contact</a>'); </script></li>
+    </ul>
+  </div>
+
+  <div id="logo">
+    <h1><a href="#">Vineeth Kashyap</a><br>
+    </h1>
+    <p>Graduate Student Researcher, UCSB
+    </p>
+  </div>
+  
+  <hr>
+
+  <div id="page">
+    <div id="content">
+
+  <div class="post">
+  <h2 class="title"> {{ post.title }}<br>
+  </h2>
+  <div class="date"> {{ page.date | date: "%d %b, %Y" }} </div>
+  <div class="entry">
+  <p> {{ contents }}
+  </p>
+  </div>
+  </div>
+
+</div>
+<!-- end #content -->
+<!-- end #sidebar -->
+<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end #page -->
+<div id="footer">
+<p>Copyright (c) 2009 Vineeth Kashyap. All rights reserved. Design by <a
+ href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11111393-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
