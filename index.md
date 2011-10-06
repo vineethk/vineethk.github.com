@@ -1,6 +1,6 @@
 ---
 title: Vineeth Kashyap's Blog
-layout: template
+layout: default
 ---
 
 
