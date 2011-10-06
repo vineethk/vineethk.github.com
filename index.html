@@ -1,0 +1,19 @@
+---
+layout: default
+title: Vineeth Kashyap
+---
+
+<div class="post"> 
+  <h2 class="title">
+    Recent Blog Posts
+  </h2>
+  <div class="entry">
+    <p>
+      <ul>
+        {% for post in site.posts %}
+          <li> <span> {{ post.date }} </span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> </li>
+        {* endfor *}
+      </ul>
+    </p>
+  </div>
+</div>
