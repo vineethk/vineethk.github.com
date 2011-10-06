@@ -1,10 +1,7 @@
 ---
-title: My First Blog
+title: Vineeth Kashyap's Blog
 layout: template
 ---
 
-This is my first blog entry, that is probably going to be erased. Also, putting in some code. 
-	var x = 1;
-	//x is now an integer!
 
-
+{{ site.posts.first.content }}
