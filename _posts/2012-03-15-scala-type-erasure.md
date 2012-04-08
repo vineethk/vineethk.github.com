@@ -1,6 +1,6 @@
 ---
 layout: template
-title: Scalas Type Erasure Some Pain Points
+title: "Scala's Type Erasure -- Some Pain Points"
 ---
 
 Because Scala programs run on the JVM, some of the rich type information available at compile time is lost at runtime. This is unfortunate, because we cannot write code like the following.

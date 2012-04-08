@@ -1,6 +1,6 @@
 ---
 layout: template
-title: [HOWTO]: Do efficient command line command editing
+title: "[HOWTO]: Do efficient command line command editing"
 ---
 
 Have you ever felt frustrated while editing a long command on a command line of a shell? Or say you are in Scala's REPL, and you want to go back to the middle of the line to edit something? 
