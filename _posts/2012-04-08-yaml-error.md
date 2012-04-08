@@ -3,7 +3,7 @@ layout: template
 title: YAML Processing Bug
 ---
 
-Publishing blogs on github pages via [jekyll][1] and [markdown][2] has been fun (as a sidenote, I use [Mou][3] as my markdown editor -- its for OS X). Recently, I started running into an error where the YAML front matter was not getting processed correctly, which one can find by executing the command (as described in [github pages help][4]
+Publishing blogs on github pages via [jekyll][1] and [markdown][2] has been fun (as a sidenote, I use [Mou][3] as my markdown editor -- its for OS X). Recently, I started running into an error where the YAML front matter was not getting processed correctly, which one can find by executing the command (as described in [github pages help][4])
 
 	jekyll --pygments --safe
 The reason was the YAML to decribe my title was something like:
