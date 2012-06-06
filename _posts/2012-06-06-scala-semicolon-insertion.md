@@ -1,6 +1,6 @@
 ---
 layout: template
-title: "Scala's Automatic Semicolon Inference  -- Beware of Potential Bugs"
+title: "Scala's Automatic Semicolon Inference  -- Beware of Bugs You Can Cause"
 ---
 
 Scala has automatic semicolon inference, so one need not end every statement in a semicolon. Which makes it nicer looking (?), saves a bunch of typing. But it can come back and bite you in the trickiest ways :)
@@ -9,13 +9,13 @@ I have had to fix bugs both in my code as well as someone elses, that have had t
 
 
 		case class Foo(veryLongNameForThisThingWhateverItIs: Int,
-                   anotherveryLongNameForThisThingWhateverItIs: Int) {
+                       anotherveryLongNameForThisThingWhateverItIs: Int) {
   
   		def sum = veryLongNameForThisThingWhateverItIs
-             + anotherveryLongNameForThisThingWhateverItIs
+                  + anotherveryLongNameForThisThingWhateverItIs
 
  	 	def anotherSum = { veryLongNameForThisThingWhateverItIs
-                     + anotherveryLongNameForThisThingWhateverItIs }
+                           + anotherveryLongNameForThisThingWhateverItIs }
 
 		}
 
