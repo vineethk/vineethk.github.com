@@ -8,16 +8,16 @@ Scala has automatic semicolon inference, so one need not end every statement in 
 I have had to fix bugs both in my code as well as someone elses, that have had to do with automatic semicolon inference. And mind you, these are very tricky to find, since the code tends to look immaculate in the first, and next few glances, unless you are specifically looking for this bug. 
 
 
-	case class Foo(veryLongNameForThisThingWhateverItIs: Int,
+		case class Foo(veryLongNameForThisThingWhateverItIs: Int,
                    anotherveryLongNameForThisThingWhateverItIs: Int) {
   
-  	def sum = veryLongNameForThisThingWhateverItIs
+  		def sum = veryLongNameForThisThingWhateverItIs
              + anotherveryLongNameForThisThingWhateverItIs
 
-  	def anotherSum = { veryLongNameForThisThingWhateverItIs
+ 	 	def anotherSum = { veryLongNameForThisThingWhateverItIs
                      + anotherveryLongNameForThisThingWhateverItIs }
 
-	}
+		}
 
 Now, if you call this:
 
