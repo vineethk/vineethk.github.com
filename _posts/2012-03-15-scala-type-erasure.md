@@ -51,7 +51,7 @@ And as warned, when you run this, you do not get required behaviour, as shown by
 	getIf[String](5)       ====> Some(5)
 	betterGetIf[String](5) ====> Some(5)
 
-The type information T from the type-parameterized functions getIf and betterGetIf are lost during runtime, and thus, although Scala allows us write these elegant programs, they won't run correctly on the JVM. 
+The type information `T` from the type-parameterized functions `getIf` and `betterGetIf` are lost during runtime, and thus, although Scala allows us write these elegant programs, they won't run correctly on the JVM. 
 
 
 		 
