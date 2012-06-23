@@ -1,6 +1,7 @@
 ---
 layout: template
-title: "Scala's Automatic Semicolon Inference  -- Beware of Bugs You Can Cause"
+title: "Scala's Automatic Semicolon Inference"
+subtitle: "Beware of Bugs You Can Cause"
 ---
 
 Scala has automatic semicolon inference, so one need not end every statement in a semicolon. Which makes it nicer looking (?), saves a bunch of typing. But it can come back and bite you in the trickiest ways :)
