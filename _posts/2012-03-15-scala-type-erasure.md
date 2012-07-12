@@ -1,5 +1,6 @@
 ---
 layout: template
+comments: true
 title: "Scala's Type Erasure -- Some Pain Points"
 ---
 
