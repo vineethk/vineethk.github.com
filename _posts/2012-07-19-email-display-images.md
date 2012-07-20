@@ -5,11 +5,11 @@ comments: true
 ---
 
 This is a standard technique used by spammers, and people who send promotional email.
-It is quite well known, I just thought it would be interesting to write about it. 
+It is quite well known, I thought it would be interesting to write about it. 
 
 Most modern email clients can parse HTML within an email and render it.
 This allows an email sender to format their email in a standard manner, and embed images by using the `<img>` tag. 
-One can specify the image to be rendered using the `src` attribute of the `<img>` tag, it can be any local or remote URL.
+One can specify the image to be rendered using the `src` attribute of the `<img>` tag; it can be any local or remote URL.
 
 Say that the image was specified as a remote URL. 
 Now if the person whom the email was sent to, opened the email, and the mail client parsed and rendered this as HTML, then there would be a network request to fetch the image. 
