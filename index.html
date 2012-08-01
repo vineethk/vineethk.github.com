@@ -6,11 +6,9 @@ title: Vineeth Kashyap
 <div class="post"> 
   <div class="entry">
     <p>
-      <ul>
         {% for post in site.posts %}
-          <li> <span> {{ post.date | date_to_string }} </span>  &raquo; <a href="{{ post.url }}">{{ post.title }}</a> </li>
+          <a class="boxit" href="{{ post.url }}">{{ post.title }}</a> 
         {% endfor %}
-      </ul>
     </p>
   </div>
 </div>
