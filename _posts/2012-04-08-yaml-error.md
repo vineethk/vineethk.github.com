@@ -16,4 +16,4 @@ The ":" in the title messes YAML, it needs to be escaped. The simplest fix to th
 [1]: https://github.com/mojombo/jekyll/
 [2]: http://daringfireball.net/projects/markdown/
 [3]: http://mouapp.com/
-[4]: http://help.github.com/pages/
+[4]: https://help.github.com/articles/using-jekyll-with-pages
