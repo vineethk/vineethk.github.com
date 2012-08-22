@@ -64,7 +64,9 @@ Inspired by [Rajiv Kurian's](http://www.linkedin.com/pub/rajiv-kurian/14/7a1/296
 	  else 
 	    None
 	 }
-	 
+
+I guess the `A: Manifest`	instructs the compiler to keep some manifest information around, so that later `manifest[A]` can be used. The `<:<` is an operator on manifests that checks for subtyping. 
+ 
 The `getIf	` function is used as follows:
 
 	getIf("", 1) // returns None 
