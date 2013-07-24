@@ -175,7 +175,7 @@ It is easy to add new data variants to code snippet 4. First, let us add boolean
 
 We then extend the `Algebra` to include support for these new expressions:
 
-    // Code Snipptet: 9
+    // Code Snippet: 9
     trait ExtendedAlgebra[A] extends Algebra[A] {
       def bool(b: Boolean): A
       def iff(e1: A, e2: A, e3: A): A
@@ -255,5 +255,5 @@ Suppose we want to extend our toy language to include statements, that are an in
 The above algebra introduces two new kinds of creating expressions: using variable names, and assignments. Expressions can also be liften to statements, and statements can be composed. The factory, printers and evaluators can all be independently extended to subscribe to this new algebra.
 
 ### References 
-[Extensibility for the Masses: Practical Extensibility with Object Algebras.][1]
-[1]: Extensibility for the Masses: Practical Extensibility with Object Algebras. Bruno C. d. S. Oliveira and William R. Cook. 
+[Extensibility for the Masses: Practical Extensibility with Object Algebras. Bruno C. d. S. Oliveira and William R. Cook.][1]
+[1]: http://www.cs.utexas.edu/~wcook/Drafts/2012/ecoop2012.pdf
