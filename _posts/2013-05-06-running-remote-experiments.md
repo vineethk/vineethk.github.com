@@ -1,6 +1,6 @@
 ---
 layout: template
-title: [HOWTO:] Running remote experiments
+title: "[HOWTO:] Running remote experiments"
 comments: true
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Problem of Expression
 layout: template
+comments: true
 ---
 
 The expression problem is an interesting software design issue that comes up more often that you would imagine. I was made to realize that an issue we were trying to tackle was in essence an expression problem, which made me look closely into it. In this blog, we explore a few solutions to it in Scala. Note that none of these are solutions that I came up with: these are taken from papers that I have linked to at the end of the blog. 
