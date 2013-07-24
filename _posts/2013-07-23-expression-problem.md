@@ -241,6 +241,19 @@ In code snippet 9, we extended a language with integer expressions to include bo
 
 Essentially, we compose the two algebras, and use the right algebra amongst the two to dispose each method.
 
+### Algebras with Multiple Types
+
+Suppose we want to extend our toy language to include statements, that are an independent type from expressions, then we can define the following algebra:
+
+    trait StmtAlgebra[E, S] extends ExtendedAlgebra[E] {
+      def variable(x: String): E
+      def assign(x: String, e: E): E
+      def expr(e: E): S
+      def comp(s1: S, s2: S): S
+    }
+
+The above algebra introduces two new kinds of creating expressions: using variable names, and assignments. Expressions can also be liften to statements, and statements can be composed. The factory, printers and evaluators can all be independently extended to subscribe to this new algebra.
+
 ### References 
 [Extensibility for the Masses: Practical Extensibility with Object Algebras.][1]
 [1]: Extensibility for the Masses: Practical Extensibility with Object Algebras. Bruno C. d. S. Oliveira and William R. Cook. 
