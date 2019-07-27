@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vineeth Kashyap</title>
+    <link>https://vineethk.github.io/authors/admin/</link>
+    <description>Recent content on Vineeth Kashyap</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
+    
+	    <atom:link href="https://vineethk.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://vineethk.github.io/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vineethk.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;I am a Senior Scientist at GrammaTech, Inc. I am a Research Area Manager and lead a few research projects. I live in the lovely finger lakes region in upstate NY.&lt;/p&gt;
+
+&lt;p&gt;At GrammaTech, we work on several cool and cutting edge research projects: some of the projects we work on are listed &lt;a href=&#34;https://www.grammatech.com/sponsored-research&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. We also have openings for researchers, software engineers, and interns (throughout the year). &lt;strong&gt;If what we do sounds interesting to you, and you would like to work with us or do an internship, drop me an email!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Previously, I was a graduate researcher at the &lt;a href=&#34;https://sites.cs.ucsb.edu/~benh/research/research.html&#34; target=&#34;_blank&#34;&gt;Programming Languages Lab&lt;/a&gt;,  University of California Santa Barbara. My PhD advisor was &lt;a href=&#34;https://sites.cs.ucsb.edu/~benh/research/research.html&#34; target=&#34;_blank&#34;&gt;Ben Hardekopf&lt;/a&gt;. During the summers of 2011 and 2012, I was a research intern at Mozilla Research, working with &lt;a href=&#34;https://engineering.linkedin.com/blog/2017/11/getting-to-know-dave-herman&#34; target=&#34;_blank&#34;&gt;Dave Herman&lt;/a&gt;. I worked for a couple of years at National Instruments R&amp;amp;D, Bangalore, right after my undergrad (and developed &lt;a href=&#34;http://www.ni.com/tutorial/7386/en/&#34; target=&#34;_blank&#34;&gt;this&lt;/a&gt; LabVIEW feature).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kevin Gibbons on Vineeth Kashyap</title>
+    <link>https://vineethk.github.io/authors/kevin-gibbons/</link>
+    <description>Recent content in Kevin Gibbons on Vineeth Kashyap</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
+    <lastBuildDate>Tue, 11 Nov 2014 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://vineethk.github.io/authors/kevin-gibbons/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JSAI: A static analysis platform for JavaScript</title>
+      <link>https://vineethk.github.io/publication/a-static-analysis-platform-for-javascript/</link>
+      <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://vineethk.github.io/publication/a-static-analysis-platform-for-javascript/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

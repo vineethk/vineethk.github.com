@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David Melski on Vineeth Kashyap</title>
+    <link>https://vineethk.github.io/authors/david-melski/</link>
+    <description>Recent content in David Melski on Vineeth Kashyap</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
+    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://vineethk.github.io/authors/david-melski/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automated Customized Bug-Benchmark Generation</title>
+      <link>https://vineethk.github.io/publication/bug-injector/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://vineethk.github.io/publication/bug-injector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MuSynth: Program Synthesis via Code Reuse and Code Manipulation</title>
+      <link>https://vineethk.github.io/publication/musynth/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://vineethk.github.io/publication/musynth/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
