@@ -13,128 +13,38 @@
     
     
     <item>
-      <title>Automated Customized Bug-Benchmark Generation</title>
-      <link>https://vineethk.github.io/publication/bug-injector/</link>
+      <title>Publications</title>
+      <link>https://vineethk.github.io/publication/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/bug-injector/</guid>
+      <guid>https://vineethk.github.io/publication/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>STAMP: Using Big Code to Learn Static Analysis Rules for Library APIs</title>
-      <link>https://vineethk.github.io/talk/apiad/</link>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://vineethk.github.io/talk/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/talk/apiad/</guid>
+      <guid>https://vineethk.github.io/talk/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Fast and Precise Disassembly Using Datalog</title>
-      <link>https://vineethk.github.io/talk/ddisasm/</link>
-      <pubDate>Sun, 23 Jun 2019 00:00:00 +0000</pubDate>
+      <title></title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/talk/ddisasm/</guid>
+      <guid></guid>
       <description></description>
     </item>
     
     <item>
-      <title>JS Smart: Checking Library API Usage in JavaScript Programs</title>
-      <link>https://vineethk.github.io/talk/js-smart/</link>
-      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      <title>Posts</title>
+      <link>https://vineethk.github.io/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/talk/js-smart/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MuSynth: Program Synthesis via Code Reuse and Code Manipulation</title>
-      <link>https://vineethk.github.io/publication/musynth/</link>
-      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/musynth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Parallel Abstract Interpreter for JavaScript</title>
-      <link>https://vineethk.github.io/publication/parallel-ai-for-javascript/</link>
-      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/parallel-ai-for-javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JSAI: A static analysis platform for JavaScript</title>
-      <link>https://vineethk.github.io/publication/a-static-analysis-platform-for-javascript/</link>
-      <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/a-static-analysis-platform-for-javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sapper: A Language for Hardware-Level Security Policy Enforcement</title>
-      <link>https://vineethk.github.io/publication/sapper-asplos/</link>
-      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/sapper-asplos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Security Signature Inference for JavaScript-based Browser Addons</title>
-      <link>https://vineethk.github.io/publication/browser-addons/</link>
-      <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/browser-addons/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Widening for Control Flow</title>
-      <link>https://vineethk.github.io/publication/widening-for-control-flow/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/widening-for-control-flow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sapper: a Language for Provable Hardware Policy Enforcement</title>
-      <link>https://vineethk.github.io/publication/sapper-plas/</link>
-      <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/sapper-plas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Type Refinement for Static Analysis of JavaScript</title>
-      <link>https://vineethk.github.io/publication/type-refinement/</link>
-      <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/type-refinement/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Caisson: a Hardware Description Language for Secure Information Flow</title>
-      <link>https://vineethk.github.io/publication/caisson/</link>
-      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/caisson/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Timing- and Termination-Sensitive Secure Information Flow: Exploring a New Approach</title>
-      <link>https://vineethk.github.io/publication/timing-and-termination/</link>
-      <pubDate>Sun, 01 May 2011 00:00:00 +0000</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/timing-and-termination/</guid>
+      <guid>https://vineethk.github.io/post/</guid>
       <description></description>
     </item>
     
