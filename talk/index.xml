@@ -7,10 +7,28 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
-    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://vineethk.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>API Analytics for Curating Static Analysis Rules</title>
+      <link>https://vineethk.github.io/talk/api-analytics/</link>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vineethk.github.io/talk/api-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Out of Sight, Out of Place: Detecting and Assessing Swapped Arguments</title>
+      <link>https://vineethk.github.io/talk/swapd/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vineethk.github.io/talk/swapd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>STAMP: Using Big Code to Learn Static Analysis Rules for Library APIs</title>
