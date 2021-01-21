@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4 on Vineeth Kashyap</title>
+    <link>https://vineethk.github.io/publication_types/4/</link>
+    <description>Recent content in 4 on Vineeth Kashyap</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
+    <lastBuildDate>Thu, 08 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://vineethk.github.io/publication_types/4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Source Forager: A Search Engine for Similar Source Code</title>
+      <link>https://vineethk.github.io/publication/source-forager/</link>
+      <pubDate>Thu, 08 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://vineethk.github.io/publication/source-forager/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
