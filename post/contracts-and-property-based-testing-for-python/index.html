@@ -28,10 +28,11 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="I have really liked using contracts in conjunction with property-based testing during development, so this blog post is a whirlwind tour of these technologies as they apply to Python. In this blog post, I will cover:
+ How to perform property-based testing in Python with hypothesis? How to mix it with contract-driven development for Python? How to do the above more efficiently?  Property-based Testing Property-based testing allows programmers to express tests as high-level properties they expect to hold when exercising some code of interest.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://vineethk.github.io/talk/api-analytics/">
+  <link rel="alternate" hreflang="en-us" href="https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/">
 
   
 
@@ -110,7 +111,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://vineethk.github.io/talk/api-analytics/">
+  <link rel="canonical" href="https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/">
 
   
   
@@ -125,26 +126,27 @@
   <meta property="twitter:creator" content="@vineethkashyap">
   
   <meta property="og:site_name" content="Vineeth Kashyap">
-  <meta property="og:url" content="https://vineethk.github.io/talk/api-analytics/">
-  <meta property="og:title" content="API Analytics for Curating Static Analysis Rules | Vineeth Kashyap">
-  <meta property="og:description" content=""><meta property="og:image" content="https://vineethk.github.io/img/icon-192.png">
+  <meta property="og:url" content="https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/">
+  <meta property="og:title" content="Contracts and Property-Based Testing for Python | Vineeth Kashyap">
+  <meta property="og:description" content="I have really liked using contracts in conjunction with property-based testing during development, so this blog post is a whirlwind tour of these technologies as they apply to Python. In this blog post, I will cover:
+ How to perform property-based testing in Python with hypothesis? How to mix it with contract-driven development for Python? How to do the above more efficiently?  Property-based Testing Property-based testing allows programmers to express tests as high-level properties they expect to hold when exercising some code of interest."><meta property="og:image" content="https://vineethk.github.io/img/icon-192.png">
   <meta property="twitter:image" content="https://vineethk.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2020-10-06T16:15:33-04:00">
+  <meta property="article:published_time" content="2021-02-04T11:55:56-05:00">
   
-  <meta property="article:modified_time" content="2020-11-17T00:00:00&#43;00:00">
+  <meta property="article:modified_time" content="2021-02-04T11:55:56-05:00">
   
-
-  
-
 
   
 
 
+  
 
 
 
-  <title>API Analytics for Curating Static Analysis Rules | Vineeth Kashyap</title>
+
+
+  <title>Contracts and Property-Based Testing for Python | Vineeth Kashyap</title>
 
 </head>
 
@@ -318,7 +320,7 @@
 </nav>
 
 
-  <div class="pub" itemscope itemtype="http://schema.org/Event">
+  <article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
@@ -339,7 +341,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">API Analytics for Curating Static Analysis Rules</h1>
+  <h1 itemprop="name">Contracts and Property-Based Testing for Python</h1>
 
   
 
@@ -348,8 +350,8 @@
 
 
 
-<meta content="2020-11-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2020-11-17 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+<meta content="2021-02-04 11:55:56 -0500 -0500" itemprop="datePublished">
+<meta content="2021-02-04 11:55:56 -0500 -0500" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -357,9 +359,22 @@
   
 
   
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Feb 4, 2021</time>
+  </span>
+  
 
   
 
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
   
 
   
@@ -381,7 +396,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://vineethk.github.io/talk/api-analytics/&amp;text=API%20Analytics%20for%20Curating%20Static%20Analysis%20Rules" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/&amp;text=Contracts%20and%20Property-Based%20Testing%20for%20Python" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -394,7 +409,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://vineethk.github.io/talk/api-analytics/&amp;t=API%20Analytics%20for%20Curating%20Static%20Analysis%20Rules" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/&amp;t=Contracts%20and%20Property-Based%20Testing%20for%20Python" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -407,7 +422,7 @@
       
       
       <li>
-        <a href="mailto:?subject=API%20Analytics%20for%20Curating%20Static%20Analysis%20Rules&amp;body=https://vineethk.github.io/talk/api-analytics/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Contracts%20and%20Property-Based%20Testing%20for%20Python&amp;body=https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -420,7 +435,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://vineethk.github.io/talk/api-analytics/&amp;title=API%20Analytics%20for%20Curating%20Static%20Analysis%20Rules" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/&amp;title=Contracts%20and%20Property-Based%20Testing%20for%20Python" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -433,7 +448,7 @@
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=API%20Analytics%20for%20Curating%20Static%20Analysis%20Rules%20https://vineethk.github.io/talk/api-analytics/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Contracts%20and%20Property-Based%20Testing%20for%20Python%20https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -446,7 +461,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://vineethk.github.io/talk/api-analytics/&amp;title=API%20Analytics%20for%20Curating%20Static%20Analysis%20Rules" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/&amp;title=Contracts%20and%20Property-Based%20Testing%20for%20Python" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -481,68 +496,84 @@
 
   <div class="article-container">
 
-    
-      <br>
-    
+    <div class="article-style" itemprop="articleBody">
+      <p>I have really liked using contracts in conjunction with property-based testing during development, so this blog post is a whirlwind tour of these technologies as they apply to Python. In this blog post, I will cover:</p>
+<ul>
+<li>How to perform property-based testing in Python with <a href="https://hypothesis.readthedocs.io/en/latest/">hypothesis</a>?</li>
+<li>How to mix it with <a href="https://pypi.org/project/dpcontracts/">contract-driven development</a> for Python?</li>
+<li>How to do the above more efficiently?</li>
+</ul>
+<h2 id="property-based-testing">Property-based Testing</h2>
+<p>Property-based testing allows programmers to express tests as high-level properties they expect to hold when exercising some code of interest. The intent is to then test the code with automatically and randomly-constructed inputs and check whether the expressed properties hold. A high-level property is a (possibly partial) specification.</p>
+<p><a href="https://drops.dagstuhl.de/opus/volltexte/2020/13170/pdf/LIPIcs-ECOOP-2020-13.pdf">This ECOOP 2020 paper</a> on the internals of hypothesis' test case reduction is very interesting.</p>
+<p>Writing some code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> heapq <span style="color:#f92672">import</span> heappush, heappushpop
+<span style="color:#f92672">from</span> dpcontracts <span style="color:#f92672">import</span> require, ensure
+<span style="color:#f92672">from</span> hypothesis <span style="color:#f92672">import</span> given, assume, settings, HealthCheck, Verbosity
+<span style="color:#f92672">from</span> hypothesis.extra.dpcontracts <span style="color:#f92672">import</span> fulfill
+<span style="color:#f92672">import</span> hypothesis.strategies <span style="color:#f92672">as</span> st
+<span style="color:#f92672">from</span> hypothesis.strategies <span style="color:#f92672">import</span> composite
+<span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> List
 
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Date</div>
-          <div class="col-12 col-md-9" itemprop="datePublished">
-            
-            Nov 17, 2020
-            <div class="talk-time">
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
+
+<span style="color:#a6e22e">@require</span>(<span style="color:#e6db74">&#34;`k` is non-negative&#34;</span>, <span style="color:#66d9ef">lambda</span> args: args<span style="color:#f92672">.</span>k <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>)
+<span style="color:#a6e22e">@require</span>(<span style="color:#e6db74">&#34;`k` is less than length of `nums`&#34;</span>, <span style="color:#66d9ef">lambda</span> args: args<span style="color:#f92672">.</span>k <span style="color:#f92672">&lt;=</span> len(args<span style="color:#f92672">.</span>nums))
+<span style="color:#a6e22e">@ensure</span>(<span style="color:#e6db74">&#34;there are atmost `k` elements&#34;</span>, <span style="color:#66d9ef">lambda</span> args, result: len(result) <span style="color:#f92672">&lt;=</span> args<span style="color:#f92672">.</span>k)
+<span style="color:#a6e22e">@ensure</span>(
+    <span style="color:#e6db74">&#34;largest number is returned&#34;</span>, <span style="color:#66d9ef">lambda</span> args, result: max(result) <span style="color:#f92672">==</span> max(args<span style="color:#f92672">.</span>nums)
+)
+<span style="color:#a6e22e">@ensure</span>(
+    <span style="color:#e6db74">&#34;`result` is the `k` largest&#34;</span>,
+    <span style="color:#66d9ef">lambda</span> args, result: sorted(args<span style="color:#f92672">.</span>nums, reverse<span style="color:#f92672">=</span>True)[: args<span style="color:#f92672">.</span>k]
+    <span style="color:#f92672">==</span> sorted(result, reverse<span style="color:#f92672">=</span>True),
+)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">find_k_largest_numbers</span>(nums: List[int], k: int) <span style="color:#f92672">-&gt;</span> List[int]:
+    result <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> nums:
+        <span style="color:#66d9ef">if</span> len(result) <span style="color:#f92672">==</span> k:
+            <span style="color:#66d9ef">if</span> result[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">&lt;</span> n:
+                heappushpop(result, n)
+        <span style="color:#66d9ef">else</span>:
+            heappush(result, n)
+    <span style="color:#66d9ef">return</span> result
+
+
+<span style="color:#75715e"># k &gt; 0</span>
+<span style="color:#75715e"># k &lt; len(num)</span>
+<span style="color:#a6e22e">@composite</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">list_and_k</span>(draw):
+    l <span style="color:#f92672">=</span> draw(st<span style="color:#f92672">.</span>lists(st<span style="color:#f92672">.</span>integers(), min_size<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>))
+    k <span style="color:#f92672">=</span> draw(st<span style="color:#f92672">.</span>integers(min_value<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, max_value<span style="color:#f92672">=</span>len(l)))
+    <span style="color:#66d9ef">return</span> (l, k)
+
+
+<span style="color:#75715e"># @given(list_and_k())</span>
+<span style="color:#75715e"># @settings(</span>
+<span style="color:#75715e">#     # suppress_health_check=[HealthCheck.filter_too_much],</span>
+<span style="color:#75715e">#     max_examples=1000</span>
+<span style="color:#75715e">#     # verbosity=Verbosity.verbose,</span>
+<span style="color:#75715e"># )</span>
+<span style="color:#75715e"># def test_with_contracts(value):</span>
+<span style="color:#75715e">#     nums, k = value</span>
+<span style="color:#75715e">#     fulfill(find_k_largest_numbers)(nums, k)</span>
+
+
+<span style="color:#a6e22e">@given</span>(l<span style="color:#f92672">=</span>st<span style="color:#f92672">.</span>lists(st<span style="color:#f92672">.</span>integers()), i<span style="color:#f92672">=</span>st<span style="color:#f92672">.</span>integers())
+<span style="color:#a6e22e">@settings</span>(
+    suppress_health_check<span style="color:#f92672">=</span>[HealthCheck<span style="color:#f92672">.</span>filter_too_much, HealthCheck<span style="color:#f92672">.</span>too_slow],
+    max_examples<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>,
+)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_with_contracts_slow</span>(l, i):
+    fulfill(find_k_largest_numbers)(l, i)
+</code></pre></div>
     </div>
-    <div class="d-md-none space-below"></div>
-
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Event</div>
-          <div class="col-12 col-md-9">
-            <a href="https://2020.splashcon.org/home/tapas-2020" target="_blank" rel="noopener">
-            TAPAS 2020
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
 
     
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Location</div>
-          <div class="col-12 col-md-9">Virtual (Chicago, IL)</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
+
+
+
     
-
-    <div class="space-below"></div>
-
-    <div class="article-style">
       
-    </div>
-
-    
-
-
-    
 
 
 
@@ -630,11 +661,17 @@
 
 
 
+      
+      
+    
+
+    
+
+    
+
 
   </div>
-</div>
-
-
+</article>
 
       
 
