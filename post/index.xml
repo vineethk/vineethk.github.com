@@ -7,87 +7,9 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
-    <lastBuildDate>Thu, 04 Feb 2021 11:55:56 -0500</lastBuildDate>
     
 	    <atom:link href="https://vineethk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Contracts and Property-Based Testing for Python</title>
-      <link>https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/</link>
-      <pubDate>Thu, 04 Feb 2021 11:55:56 -0500</pubDate>
-      
-      <guid>https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/</guid>
-      <description>&lt;p&gt;I have really liked using contracts in conjunction with property-based testing during development, so this blog post is a whirlwind tour of these technologies as they apply to Python. In this blog post, I will cover:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;How to perform property-based testing in Python with &lt;a href=&#34;https://hypothesis.readthedocs.io/en/latest/&#34;&gt;hypothesis&lt;/a&gt;?&lt;/li&gt;
-&lt;li&gt;How to mix it with &lt;a href=&#34;https://pypi.org/project/dpcontracts/&#34;&gt;contract-driven development&lt;/a&gt; for Python?&lt;/li&gt;
-&lt;li&gt;How to do the above more efficiently?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;property-based-testing&#34;&gt;Property-based Testing&lt;/h2&gt;
-&lt;p&gt;Property-based testing allows programmers to express tests as high-level properties they expect to hold when exercising some code of interest. The intent is to then test the code with automatically and randomly-constructed inputs and check whether the expressed properties hold. A high-level property is a (possibly partial) specification.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://drops.dagstuhl.de/opus/volltexte/2020/13170/pdf/LIPIcs-ECOOP-2020-13.pdf&#34;&gt;This ECOOP 2020 paper&lt;/a&gt; on the internals of hypothesis&#39; test case reduction is very interesting.&lt;/p&gt;
-&lt;p&gt;Writing some code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; heapq &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; heappush, heappushpop
-&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; dpcontracts &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; require, ensure
-&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; hypothesis &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; given, assume, settings, HealthCheck, Verbosity
-&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; hypothesis.extra.dpcontracts &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; fulfill
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; hypothesis.strategies &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; st
-&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; hypothesis.strategies &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; composite
-&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; typing &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; List
-
-
-&lt;span style=&#34;color:#a6e22e&#34;&gt;@require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;`k` is non-negative&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; args: args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;k &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)
-&lt;span style=&#34;color:#a6e22e&#34;&gt;@require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;`k` is less than length of `nums`&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; args: args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;k &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; len(args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;nums))
-&lt;span style=&#34;color:#a6e22e&#34;&gt;@ensure&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;there are atmost `k` elements&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; args, result: len(result) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;=&lt;/span&gt; args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;k)
-&lt;span style=&#34;color:#a6e22e&#34;&gt;@ensure&lt;/span&gt;(
-    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;largest number is returned&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; args, result: max(result) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; max(args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;nums)
-)
-&lt;span style=&#34;color:#a6e22e&#34;&gt;@ensure&lt;/span&gt;(
-    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;`result` is the `k` largest&amp;#34;&lt;/span&gt;,
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;lambda&lt;/span&gt; args, result: sorted(args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;nums, reverse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;True)[: args&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;k]
-    &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; sorted(result, reverse&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;True),
-)
-&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;find_k_largest_numbers&lt;/span&gt;(nums: List[int], k: int) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; List[int]:
-    result &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; n &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; nums:
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; len(result) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; k:
-            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; result[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; n:
-                heappushpop(result, n)
-        &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
-            heappush(result, n)
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; result
-
-
-&lt;span style=&#34;color:#75715e&#34;&gt;# k &amp;gt; 0&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# k &amp;lt; len(num)&lt;/span&gt;
-&lt;span style=&#34;color:#a6e22e&#34;&gt;@composite&lt;/span&gt;
-&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;list_and_k&lt;/span&gt;(draw):
-    l &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; draw(st&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lists(st&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;integers(), min_size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;))
-    k &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; draw(st&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;integers(min_value&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, max_value&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;len(l)))
-    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; (l, k)
-
-
-&lt;span style=&#34;color:#75715e&#34;&gt;# @given(list_and_k())&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# @settings(&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#     # suppress_health_check=[HealthCheck.filter_too_much],&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#     max_examples=1000&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#     # verbosity=Verbosity.verbose,&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# )&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;# def test_with_contracts(value):&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#     nums, k = value&lt;/span&gt;
-&lt;span style=&#34;color:#75715e&#34;&gt;#     fulfill(find_k_largest_numbers)(nums, k)&lt;/span&gt;
-
-
-&lt;span style=&#34;color:#a6e22e&#34;&gt;@given&lt;/span&gt;(l&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;st&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;lists(st&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;integers()), i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;st&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;integers())
-&lt;span style=&#34;color:#a6e22e&#34;&gt;@settings&lt;/span&gt;(
-    suppress_health_check&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;[HealthCheck&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;filter_too_much, HealthCheck&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;too_slow],
-    max_examples&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;,
-)
-&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test_with_contracts_slow&lt;/span&gt;(l, i):
-    fulfill(find_k_largest_numbers)(l, i)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
     
   </channel>
 </rss>
