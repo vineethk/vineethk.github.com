@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://vineethk.github.io/post/contracts-and-property-based-testing-for-python/</loc>
-    <lastmod>2021-02-04T11:55:56-05:00</lastmod>
-  </url><url>
-    <loc>https://vineethk.github.io/post/</loc>
-    <lastmod>2021-02-04T11:55:56-05:00</lastmod>
-  </url><url>
-    <loc>https://vineethk.github.io/</loc>
-    <lastmod>2021-02-04T11:55:56-05:00</lastmod>
-  </url><url>
     <loc>https://vineethk.github.io/publication_types/1/</loc>
     <lastmod>2020-11-17T19:09:19-04:00</lastmod>
   </url><url>
@@ -39,6 +30,9 @@
     <lastmod>2020-11-17T19:09:19-04:00</lastmod>
   </url><url>
     <loc>https://vineethk.github.io/authors/vineeth-kashyap/</loc>
+    <lastmod>2020-11-17T19:09:19-04:00</lastmod>
+  </url><url>
+    <loc>https://vineethk.github.io/</loc>
     <lastmod>2020-11-17T19:09:19-04:00</lastmod>
   </url><url>
     <loc>https://vineethk.github.io/talk/api-analytics/</loc>
@@ -188,6 +182,8 @@
     <loc>https://vineethk.github.io/authors/admin/</loc>
   </url><url>
     <loc>https://vineethk.github.io/categories/</loc>
+  </url><url>
+    <loc>https://vineethk.github.io/post/</loc>
   </url><url>
     <loc>https://vineethk.github.io/tags/</loc>
   </url>
