@@ -7,9 +7,35 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
+    <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://vineethk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Quick Reference: Git Commands</title>
+      <link>https://vineethk.github.io/post/git-commands/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://vineethk.github.io/post/git-commands/</guid>
+      <description>&lt;p&gt;I find myself looking for or double checking certain git commands at varying frequencies. I made this list to help myself, it&amp;rsquo;s a bonus if it helps you too!&lt;/p&gt;
+&lt;p&gt;None of these recipes were invented by me. I&amp;rsquo;ll try to include links if I have saved them in my notes, if not, sorry but thank you internet stranger for making life a little bit better.&lt;/p&gt;
+&lt;h2 id=&#34;cleanup-commits-in-a-feature-branch&#34;&gt;Cleanup commits in a feature branch&lt;/h2&gt;
+&lt;p&gt;I have lost code that I have written and saved but not committed, because the development server I used crashed. So, I&amp;rsquo;ve learned to commit often. But sometimes (read, most times) I want to save work that is not ready for any human to ever see. I don&amp;rsquo;t want all these intermediate commits to show up in a pull request.&lt;/p&gt;
+&lt;p&gt;To make it concrete: I have a branch &lt;code&gt;dirty&lt;/code&gt; that branched-off from &lt;code&gt;master&lt;/code&gt;, and I have possibly merged &lt;code&gt;master&lt;/code&gt; into &lt;code&gt;dirty&lt;/code&gt; several times, and made several commits to &lt;code&gt;dirty&lt;/code&gt;. I want to now create a &amp;ldquo;clean&amp;rdquo; pull request by creating a branch &lt;code&gt;clean&lt;/code&gt; that has all the commits of &lt;code&gt;dirty&lt;/code&gt; squashed into one. Below is a pretty safe git recipe for that (there are several ways to do it, but below is the one I prefer).&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s first make sure we have the latest &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout master
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git pull
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s branch off the latest &lt;code&gt;master&lt;/code&gt; into &lt;code&gt;clean&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout -b clean
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s bring changes in &lt;code&gt;dirty&lt;/code&gt; into &lt;code&gt;clean&lt;/code&gt;, but squash them.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git merge --squash dirty
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can now commit changes in &lt;code&gt;clean&lt;/code&gt;, with a unified and meaningful commit message, by deleting all the intermediate commit and merge messages.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, you can create a pull request from the &lt;code&gt;clean&lt;/code&gt; branch that hides all your commit transgressions in &lt;code&gt;dirty&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>
