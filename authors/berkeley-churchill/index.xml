@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Berkeley Churchill on Vineeth Kashyap</title>
-    <link>https://vineethk.github.io/authors/berkeley-churchill/</link>
+    <link>http://localhost:1313/authors/berkeley-churchill/</link>
     <description>Recent content in Berkeley Churchill on Vineeth Kashyap</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
     <lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://vineethk.github.io/authors/berkeley-churchill/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://localhost:1313/authors/berkeley-churchill/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Widening for Control Flow</title>
-      <link>https://vineethk.github.io/publication/widening-for-control-flow/</link>
+      <link>http://localhost:1313/publication/widening-for-control-flow/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/widening-for-control-flow/</guid>
+      <guid>http://localhost:1313/publication/widening-for-control-flow/</guid>
       <description></description>
     </item>
     

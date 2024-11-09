@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lucja Kot on Vineeth Kashyap</title>
-    <link>https://vineethk.github.io/authors/lucja-kot/</link>
+    <link>http://localhost:1313/authors/lucja-kot/</link>
     <description>Recent content in Lucja Kot on Vineeth Kashyap</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
     <lastBuildDate>Tue, 17 Nov 2020 19:09:19 -0400</lastBuildDate>
     
-	    <atom:link href="https://vineethk.github.io/authors/lucja-kot/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://localhost:1313/authors/lucja-kot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>API Analytics for Curating Static Analysis Rules</title>
-      <link>https://vineethk.github.io/publication/api-analytics/</link>
+      <link>http://localhost:1313/publication/api-analytics/</link>
       <pubDate>Tue, 17 Nov 2020 19:09:19 -0400</pubDate>
       
-      <guid>https://vineethk.github.io/publication/api-analytics/</guid>
+      <guid>http://localhost:1313/publication/api-analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Out of Sight, Out of Place: Detecting and Assessing Swapped Arguments</title>
-      <link>https://vineethk.github.io/publication/out-of-sight-out-of-place/</link>
+      <link>http://localhost:1313/publication/out-of-sight-out-of-place/</link>
       <pubDate>Mon, 28 Sep 2020 19:01:24 -0400</pubDate>
       
-      <guid>https://vineethk.github.io/publication/out-of-sight-out-of-place/</guid>
+      <guid>http://localhost:1313/publication/out-of-sight-out-of-place/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Automated Customized Bug-Benchmark Generation</title>
-      <link>https://vineethk.github.io/publication/bug-injector/</link>
+      <link>http://localhost:1313/publication/bug-injector/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/bug-injector/</guid>
+      <guid>http://localhost:1313/publication/bug-injector/</guid>
       <description></description>
     </item>
     

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jason K. Oberg on Vineeth Kashyap</title>
-    <link>https://vineethk.github.io/authors/jason-k.-oberg/</link>
+    <link>http://localhost:1313/authors/jason-k.-oberg/</link>
     <description>Recent content in Jason K. Oberg on Vineeth Kashyap</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
     <lastBuildDate>Sat, 01 Jun 2013 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://vineethk.github.io/authors/jason-k.-oberg/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://localhost:1313/authors/jason-k.-oberg/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sapper: a Language for Provable Hardware Policy Enforcement</title>
-      <link>https://vineethk.github.io/publication/sapper-plas/</link>
+      <link>http://localhost:1313/publication/sapper-plas/</link>
       <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/sapper-plas/</guid>
+      <guid>http://localhost:1313/publication/sapper-plas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Caisson: a Hardware Description Language for Secure Information Flow</title>
-      <link>https://vineethk.github.io/publication/caisson/</link>
+      <link>http://localhost:1313/publication/caisson/</link>
       <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/caisson/</guid>
+      <guid>http://localhost:1313/publication/caisson/</guid>
       <description></description>
     </item>
     

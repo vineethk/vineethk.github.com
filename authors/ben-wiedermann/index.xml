@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ben Wiedermann on Vineeth Kashyap</title>
-    <link>https://vineethk.github.io/authors/ben-wiedermann/</link>
+    <link>http://localhost:1313/authors/ben-wiedermann/</link>
     <description>Recent content in Ben Wiedermann on Vineeth Kashyap</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
     <lastBuildDate>Tue, 11 Nov 2014 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://vineethk.github.io/authors/ben-wiedermann/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://localhost:1313/authors/ben-wiedermann/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JSAI: A static analysis platform for JavaScript</title>
-      <link>https://vineethk.github.io/publication/a-static-analysis-platform-for-javascript/</link>
+      <link>http://localhost:1313/publication/a-static-analysis-platform-for-javascript/</link>
       <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/a-static-analysis-platform-for-javascript/</guid>
+      <guid>http://localhost:1313/publication/a-static-analysis-platform-for-javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Widening for Control Flow</title>
-      <link>https://vineethk.github.io/publication/widening-for-control-flow/</link>
+      <link>http://localhost:1313/publication/widening-for-control-flow/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/widening-for-control-flow/</guid>
+      <guid>http://localhost:1313/publication/widening-for-control-flow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Type Refinement for Static Analysis of JavaScript</title>
-      <link>https://vineethk.github.io/publication/type-refinement/</link>
+      <link>http://localhost:1313/publication/type-refinement/</link>
       <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/type-refinement/</guid>
+      <guid>http://localhost:1313/publication/type-refinement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Timing- and Termination-Sensitive Secure Information Flow: Exploring a New Approach</title>
-      <link>https://vineethk.github.io/publication/timing-and-termination/</link>
+      <link>http://localhost:1313/publication/timing-and-termination/</link>
       <pubDate>Sun, 01 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/timing-and-termination/</guid>
+      <guid>http://localhost:1313/publication/timing-and-termination/</guid>
       <description></description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>David Melsi on Vineeth Kashyap</title>
-    <link>https://vineethk.github.io/authors/david-melsi/</link>
+    <link>http://localhost:1313/authors/david-melsi/</link>
     <description>Recent content in David Melsi on Vineeth Kashyap</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
     <lastBuildDate>Tue, 17 Nov 2020 19:09:19 -0400</lastBuildDate>
     
-	    <atom:link href="https://vineethk.github.io/authors/david-melsi/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://localhost:1313/authors/david-melsi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>API Analytics for Curating Static Analysis Rules</title>
-      <link>https://vineethk.github.io/publication/api-analytics/</link>
+      <link>http://localhost:1313/publication/api-analytics/</link>
       <pubDate>Tue, 17 Nov 2020 19:09:19 -0400</pubDate>
       
-      <guid>https://vineethk.github.io/publication/api-analytics/</guid>
+      <guid>http://localhost:1313/publication/api-analytics/</guid>
       <description></description>
     </item>
     

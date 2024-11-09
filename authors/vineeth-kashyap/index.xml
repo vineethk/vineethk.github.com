@@ -2,139 +2,139 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vineeth Kashyap</title>
-    <link>https://vineethk.github.io/authors/vineeth-kashyap/</link>
+    <link>http://localhost:1313/authors/vineeth-kashyap/</link>
     <description>Recent content on Vineeth Kashyap</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
     <lastBuildDate>Tue, 17 Nov 2020 19:09:19 -0400</lastBuildDate>
     
-	    <atom:link href="https://vineethk.github.io/authors/vineeth-kashyap/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://localhost:1313/authors/vineeth-kashyap/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>API Analytics for Curating Static Analysis Rules</title>
-      <link>https://vineethk.github.io/publication/api-analytics/</link>
+      <link>http://localhost:1313/publication/api-analytics/</link>
       <pubDate>Tue, 17 Nov 2020 19:09:19 -0400</pubDate>
       
-      <guid>https://vineethk.github.io/publication/api-analytics/</guid>
+      <guid>http://localhost:1313/publication/api-analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Out of Sight, Out of Place: Detecting and Assessing Swapped Arguments</title>
-      <link>https://vineethk.github.io/publication/out-of-sight-out-of-place/</link>
+      <link>http://localhost:1313/publication/out-of-sight-out-of-place/</link>
       <pubDate>Mon, 28 Sep 2020 19:01:24 -0400</pubDate>
       
-      <guid>https://vineethk.github.io/publication/out-of-sight-out-of-place/</guid>
+      <guid>http://localhost:1313/publication/out-of-sight-out-of-place/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Automated Customized Bug-Benchmark Generation</title>
-      <link>https://vineethk.github.io/publication/bug-injector/</link>
+      <link>http://localhost:1313/publication/bug-injector/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/bug-injector/</guid>
+      <guid>http://localhost:1313/publication/bug-injector/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Source Forager: A Search Engine for Similar Source Code</title>
-      <link>https://vineethk.github.io/publication/source-forager/</link>
+      <link>http://localhost:1313/publication/source-forager/</link>
       <pubDate>Thu, 08 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/source-forager/</guid>
+      <guid>http://localhost:1313/publication/source-forager/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MuSynth: Program Synthesis via Code Reuse and Code Manipulation</title>
-      <link>https://vineethk.github.io/publication/musynth/</link>
+      <link>http://localhost:1313/publication/musynth/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/musynth/</guid>
+      <guid>http://localhost:1313/publication/musynth/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Parallel Abstract Interpreter for JavaScript</title>
-      <link>https://vineethk.github.io/publication/parallel-ai-for-javascript/</link>
+      <link>http://localhost:1313/publication/parallel-ai-for-javascript/</link>
       <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/parallel-ai-for-javascript/</guid>
+      <guid>http://localhost:1313/publication/parallel-ai-for-javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JSAI: A static analysis platform for JavaScript</title>
-      <link>https://vineethk.github.io/publication/a-static-analysis-platform-for-javascript/</link>
+      <link>http://localhost:1313/publication/a-static-analysis-platform-for-javascript/</link>
       <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/a-static-analysis-platform-for-javascript/</guid>
+      <guid>http://localhost:1313/publication/a-static-analysis-platform-for-javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sapper: A Language for Hardware-Level Security Policy Enforcement</title>
-      <link>https://vineethk.github.io/publication/sapper-asplos/</link>
+      <link>http://localhost:1313/publication/sapper-asplos/</link>
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/sapper-asplos/</guid>
+      <guid>http://localhost:1313/publication/sapper-asplos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Security Signature Inference for JavaScript-based Browser Addons</title>
-      <link>https://vineethk.github.io/publication/browser-addons/</link>
+      <link>http://localhost:1313/publication/browser-addons/</link>
       <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/browser-addons/</guid>
+      <guid>http://localhost:1313/publication/browser-addons/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Widening for Control Flow</title>
-      <link>https://vineethk.github.io/publication/widening-for-control-flow/</link>
+      <link>http://localhost:1313/publication/widening-for-control-flow/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/widening-for-control-flow/</guid>
+      <guid>http://localhost:1313/publication/widening-for-control-flow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sapper: a Language for Provable Hardware Policy Enforcement</title>
-      <link>https://vineethk.github.io/publication/sapper-plas/</link>
+      <link>http://localhost:1313/publication/sapper-plas/</link>
       <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/sapper-plas/</guid>
+      <guid>http://localhost:1313/publication/sapper-plas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Type Refinement for Static Analysis of JavaScript</title>
-      <link>https://vineethk.github.io/publication/type-refinement/</link>
+      <link>http://localhost:1313/publication/type-refinement/</link>
       <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/type-refinement/</guid>
+      <guid>http://localhost:1313/publication/type-refinement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Caisson: a Hardware Description Language for Secure Information Flow</title>
-      <link>https://vineethk.github.io/publication/caisson/</link>
+      <link>http://localhost:1313/publication/caisson/</link>
       <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/caisson/</guid>
+      <guid>http://localhost:1313/publication/caisson/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Timing- and Termination-Sensitive Secure Information Flow: Exploring a New Approach</title>
-      <link>https://vineethk.github.io/publication/timing-and-termination/</link>
+      <link>http://localhost:1313/publication/timing-and-termination/</link>
       <pubDate>Sun, 01 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/timing-and-termination/</guid>
+      <guid>http://localhost:1313/publication/timing-and-termination/</guid>
       <description></description>
     </item>
     

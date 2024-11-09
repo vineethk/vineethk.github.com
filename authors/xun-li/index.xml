@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xun Li on Vineeth Kashyap</title>
-    <link>https://vineethk.github.io/authors/xun-li/</link>
+    <link>http://localhost:1313/authors/xun-li/</link>
     <description>Recent content in Xun Li on Vineeth Kashyap</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
     <lastBuildDate>Sat, 01 Mar 2014 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="https://vineethk.github.io/authors/xun-li/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="http://localhost:1313/authors/xun-li/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Sapper: A Language for Hardware-Level Security Policy Enforcement</title>
-      <link>https://vineethk.github.io/publication/sapper-asplos/</link>
+      <link>http://localhost:1313/publication/sapper-asplos/</link>
       <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/sapper-asplos/</guid>
+      <guid>http://localhost:1313/publication/sapper-asplos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sapper: a Language for Provable Hardware Policy Enforcement</title>
-      <link>https://vineethk.github.io/publication/sapper-plas/</link>
+      <link>http://localhost:1313/publication/sapper-plas/</link>
       <pubDate>Sat, 01 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/sapper-plas/</guid>
+      <guid>http://localhost:1313/publication/sapper-plas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Caisson: a Hardware Description Language for Secure Information Flow</title>
-      <link>https://vineethk.github.io/publication/caisson/</link>
+      <link>http://localhost:1313/publication/caisson/</link>
       <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://vineethk.github.io/publication/caisson/</guid>
+      <guid>http://localhost:1313/publication/caisson/</guid>
       <description></description>
     </item>
     
