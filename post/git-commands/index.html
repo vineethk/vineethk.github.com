@@ -85,7 +85,7 @@ I have lost code that I have written and saved but not committed, because the de
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.26adedf5ac6a84697cc7df7a0f0fb2bc.css">
+  <link rel="stylesheet" href="/css/academic.min.c915dac55204335cbab3d2d58ed848d4.css">
 
   
 
@@ -478,15 +478,15 @@ I have lost code that I have written and saved but not committed, because the de
 <p>I have lost code that I have written and saved but not committed, because the development server I used crashed. So, I&rsquo;ve learned to commit often. But sometimes (read, most times) I want to save work that is not ready for any human to ever see. I don&rsquo;t want all these intermediate commits to show up in a pull request.</p>
 <p>To make it concrete: I have a branch <code>dirty</code> that branched-off from <code>master</code>, and I have possibly merged <code>master</code> into <code>dirty</code> several times, and made several commits to <code>dirty</code>. I want to now create a &ldquo;clean&rdquo; pull request by creating a branch <code>clean</code> that has all the commits of <code>dirty</code> squashed into one. Below is a pretty safe git recipe for that (there are several ways to do it, but below is the one I prefer).</p>
 <p>Let&rsquo;s first make sure we have the latest <code>master</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout master
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout master
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git pull
 </span></span></code></pre></div><p>Let&rsquo;s branch off the latest <code>master</code> into <code>clean</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b clean
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git checkout -b clean
 </span></span></code></pre></div><p>Let&rsquo;s bring changes in <code>dirty</code> into <code>clean</code>, but squash them.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git merge --squash dirty
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git merge --squash dirty
 </span></span></code></pre></div><p>You can now commit changes in <code>clean</code>, with a unified and meaningful commit message, by deleting all the intermediate commit and merge messages.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git commit
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git commit
 </span></span></code></pre></div><p>Now, you can create a pull request from the <code>clean</code> branch that hides all your commit transgressions in <code>dirty</code>.</p>
 
     </div>
@@ -510,6 +510,94 @@ I have lost code that I have written and saved but not committed, because the de
 
 
 
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu_e512b01c52197a9d.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://vineethk.github.io/">Vineeth Kashyap</a></h5>
+      <h6 class="card-subtitle">Software Engineer, Programming Languages</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/vineeth%20dot%20rv%20at%20gmail%20dot%20com" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/vineethkashyap" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=edDtEwMAAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/vineethk" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 
 
 
@@ -616,7 +704,7 @@ I have lost code that I have written and saved but not committed, because the de
     
     
     
-    <script src="/js/academic.min.0433c1825a91fe3cd6f67a2e363c296a.js"></script>
+    <script src="/js/academic.min.2ce622d610f7c9d7e4f911692d41f4ae.js"></script>
 
     
 
@@ -631,7 +719,7 @@ I have lost code that I have written and saved but not committed, because the de
   
 
   <p class="powered-by">
-    © Vineeth Kashyap 2024 &middot; 
+    © Vineeth Kashyap 2026 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

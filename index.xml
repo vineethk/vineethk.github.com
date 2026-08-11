@@ -7,26 +7,24 @@
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Vineeth Kashyap {year}</copyright>
-    <lastBuildDate>Wed, 27 Dec 2023 19:16:05 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://vineethk.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Posts</title>
-      <link>https://vineethk.github.io/post/</link>
-      <pubDate>Wed, 27 Dec 2023 19:16:05 -0500</pubDate>
-      
-      <guid>https://vineethk.github.io/post/</guid>
+      <title>Publications</title>
+      <link>https://vineethk.github.io/publication/</link>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://vineethk.github.io/publication/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>https://vineethk.github.io/publication/</link>
-      <pubDate>Tue, 17 Nov 2020 19:09:19 -0400</pubDate>
-      
-      <guid>https://vineethk.github.io/publication/</guid>
+      <title>Posts</title>
+      <link>https://vineethk.github.io/post/</link>
+      <pubDate>Wed, 27 Dec 2023 19:16:05 -0500</pubDate>
+      <guid>https://vineethk.github.io/post/</guid>
       <description></description>
     </item>
     
@@ -34,7 +32,6 @@
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://vineethk.github.io/talk/</link>
       <pubDate>Tue, 17 Nov 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://vineethk.github.io/talk/</guid>
       <description></description>
     </item>

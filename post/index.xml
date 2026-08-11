@@ -16,7 +16,6 @@
       <title>The Glove 80 Keyboard</title>
       <link>https://vineethk.github.io/post/glove80/</link>
       <pubDate>Wed, 27 Dec 2023 19:16:05 -0500</pubDate>
-      
       <guid>https://vineethk.github.io/post/glove80/</guid>
       <description>&lt;p&gt;I have never learnt typing&amp;mdash;per se.
 Once I started coding, I think I did adhoc multi-finger hunt-and-peck typing, and just got better at it (only requiring an occasional hunt).
@@ -39,7 +38,7 @@ It came very well reviewed by the ergo mech keyboards reddit community and elsew
 &lt;p&gt;If you were not a touch typist before, Glove 80 will force you to become one (if you hunt and peck with this keyboard, you negate all its benefits).
 Because of the columnar layout, it is intuitive to figure out which finger to use for which key.
 I have finally turned into a touch typist (although I need to hunt and peck when I occasionally use the QWERTY on my laptop keyboard).&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Glove 80 with Kensington Expert Trackball&#34; src=&#34;https://vineethk.github.io/files/keyboard.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vineethk.github.io/files/keyboard.jpg&#34; alt=&#34;Glove 80 with Kensington Expert Trackball&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;recommendation&#34;&gt;Recommendation&lt;/h3&gt;
 &lt;p&gt;I really like this keyboard, and would &lt;strong&gt;recommend&lt;/strong&gt; it for anyone looking for an ergonomic programmable keyboard and is willing to spend a bit of time to get adjusted to it.
 It now comes with a travel case (not the most compact, but fits in my backpack), and I usually take it around if I need to type for work.&lt;/p&gt;
@@ -67,7 +66,7 @@ A few highlights:&lt;/p&gt;
 &lt;li&gt;Thumb is used for some of the heavy lifters like space, enter, backspace (which I used very heavily in the beginning), and momentary layer switches.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;base-layer&#34;&gt;Base Layer&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&#34;Base Layer&#34; src=&#34;https://vineethk.github.io/files/keyboard1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vineethk.github.io/files/keyboard1.png&#34; alt=&#34;Base Layer&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I have color coded the different keys based on which finger (pinky, ring, middle, or index) is supposed to hit it.
 The keys with bold borders are where those fingers rest.
 When there are non-home-row keys with two symbols (like &lt;code&gt;;&lt;/code&gt; and &lt;code&gt;,&lt;/code&gt; or &lt;code&gt;:&lt;/code&gt; and &lt;code&gt;.&lt;/code&gt;), they showcase the shift and non-shift versions of that key.&lt;/p&gt;
@@ -76,13 +75,13 @@ While there have been several other proposed layouts, I also did not want to dev
 My layout here is inspired from &lt;a href=&#34;http://www.minimak.org/&#34;&gt;minimak&lt;/a&gt;, and I was able to switch incrementally to the current layout.&lt;/p&gt;
 &lt;p&gt;When I press one of the layer keys (num nav, fn, macro, or sym), the keys momentarily (as long as the layer key is pressed) have new functionality (depending on the layer).&lt;/p&gt;
 &lt;h4 id=&#34;number-and-navigation-layer&#34;&gt;Number and Navigation Layer&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&#34;Number-Navigation Layer&#34; src=&#34;https://vineethk.github.io/files/keyboard2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vineethk.github.io/files/keyboard2.png&#34; alt=&#34;Number-Navigation Layer&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This layer is focused on numbers and navigation.&lt;/p&gt;
 &lt;h4 id=&#34;symbol-layer&#34;&gt;Symbol Layer&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&#34;Symbol Layer&#34; src=&#34;https://vineethk.github.io/files/keyboard3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vineethk.github.io/files/keyboard3.png&#34; alt=&#34;Symbol Layer&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This layer is focused on symbols.&lt;/p&gt;
 &lt;h4 id=&#34;macro-and-function-layers&#34;&gt;Macro and Function Layers&lt;/h4&gt;
-&lt;p&gt;&lt;img alt=&#34;Macro-Function Layers&#34; src=&#34;https://vineethk.github.io/files/keyboard4.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://vineethk.github.io/files/keyboard4.png&#34; alt=&#34;Macro-Function Layers&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The image above combines the macro and function layers.
 This is because currently, each of these layers has functionality assigned to only one split of the keyboard.
 The macro layer has a bunch of macros that emit a keyboard shortcut for VS Code&amp;mdash;which is where I spend a good chunk of my day in.
@@ -99,7 +98,6 @@ I also don&amp;rsquo;t use the two thumb cluster keys (not shown in these layer 
       <title>Quick Reference: Git Commands</title>
       <link>https://vineethk.github.io/post/git-commands/</link>
       <pubDate>Fri, 24 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://vineethk.github.io/post/git-commands/</guid>
       <description>&lt;p&gt;I find myself looking for or double checking certain git commands at varying frequencies. I made this list to help myself, it&amp;rsquo;s a bonus if it helps you too!&lt;/p&gt;
 &lt;p&gt;None of these recipes were invented by me. I&amp;rsquo;ll try to include links if I have saved them in my notes, if not, sorry but thank you internet stranger for making life a little bit better.&lt;/p&gt;
@@ -107,15 +105,15 @@ I also don&amp;rsquo;t use the two thumb cluster keys (not shown in these layer 
 &lt;p&gt;I have lost code that I have written and saved but not committed, because the development server I used crashed. So, I&amp;rsquo;ve learned to commit often. But sometimes (read, most times) I want to save work that is not ready for any human to ever see. I don&amp;rsquo;t want all these intermediate commits to show up in a pull request.&lt;/p&gt;
 &lt;p&gt;To make it concrete: I have a branch &lt;code&gt;dirty&lt;/code&gt; that branched-off from &lt;code&gt;master&lt;/code&gt;, and I have possibly merged &lt;code&gt;master&lt;/code&gt; into &lt;code&gt;dirty&lt;/code&gt; several times, and made several commits to &lt;code&gt;dirty&lt;/code&gt;. I want to now create a &amp;ldquo;clean&amp;rdquo; pull request by creating a branch &lt;code&gt;clean&lt;/code&gt; that has all the commits of &lt;code&gt;dirty&lt;/code&gt; squashed into one. Below is a pretty safe git recipe for that (there are several ways to do it, but below is the one I prefer).&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s first make sure we have the latest &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout master
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout master
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git pull
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s branch off the latest &lt;code&gt;master&lt;/code&gt; into &lt;code&gt;clean&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout -b clean
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git checkout -b clean
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s bring changes in &lt;code&gt;dirty&lt;/code&gt; into &lt;code&gt;clean&lt;/code&gt;, but squash them.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git merge --squash dirty
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git merge --squash dirty
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can now commit changes in &lt;code&gt;clean&lt;/code&gt;, with a unified and meaningful commit message, by deleting all the intermediate commit and merge messages.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git commit
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, you can create a pull request from the &lt;code&gt;clean&lt;/code&gt; branch that hides all your commit transgressions in &lt;code&gt;dirty&lt;/code&gt;.&lt;/p&gt;
 </description>
     </item>
