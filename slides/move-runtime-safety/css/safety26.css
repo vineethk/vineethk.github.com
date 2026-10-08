@@ -1,0 +1,370 @@
+/* High-contrast white theme for projection in a large room. */
+
+:root {
+	--ink: #111111;
+	--muted: #4b5563;
+	--rule: #d1d5db;
+	--panel: #f3f4f6;
+	--verifier: #1d4ed8;
+	--runtime: #047857;
+	--bad: #dc2626;
+	--mut: #c2410c;
+	--poison: #7e22ce;
+	--cap: #92400e;
+	--fake: #991b1b;
+
+	--r-background-color: #ffffff;
+	--r-main-font: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--r-main-font-size: 40px;
+	--r-main-color: var(--ink);
+	--r-heading-font: var(--r-main-font);
+	--r-heading-color: var(--ink);
+	--r-heading-font-weight: 700;
+	--r-heading-text-transform: none;
+	--r-heading-letter-spacing: -0.01em;
+	--r-code-font: Menlo, Monaco, monospace;
+	--r-link-color: var(--verifier);
+	--r-link-color-hover: var(--verifier);
+}
+
+/* White letterbox bars blend into a white screen. */
+html,
+body,
+.reveal-viewport {
+	background: #ffffff;
+}
+
+.reveal {
+	font-weight: 500;
+}
+
+.reveal strong,
+.reveal b {
+	font-weight: 700;
+}
+
+.reveal code {
+	font-family: var(--r-code-font);
+	font-size: 0.9em;
+	font-weight: 600;
+}
+
+/* ---------------------------------------------------------------------------
+   Layout: title pinned to the top, body centered in the remaining space.
+   --------------------------------------------------------------------------- */
+
+.reveal .slides section:not(.title-slide) {
+	height: 100%;
+	box-sizing: border-box;
+	/* Reveal sets an inline display:block on the current slide. */
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2.4em 0.9em 0.9em;
+}
+
+.reveal .slides section:not(.title-slide) > h2:first-child {
+	position: absolute;
+	top: 0.32em;
+	left: 0;
+	right: 0;
+	margin: 0;
+	z-index: 10;
+	font-size: 1.3em;
+	line-height: 1.15;
+}
+
+/* Print (?print-pdf) forces block layout and zero padding; restore the layout above. */
+html.reveal-print .reveal .slides .pdf-page > section {
+	display: flex !important;
+	height: 100% !important;
+}
+
+html.reveal-print .reveal .slides .pdf-page > section:not(.title-slide):not(:has(> .anim)) {
+	padding: 2.4em 0.9em 0.9em !important;
+}
+
+html.reveal-print .reveal .slides .pdf-page > section.title-slide {
+	padding: 0 1em !important;
+}
+
+/* Animation slides: the clip fills the slide; the title floats over its empty top band. */
+.reveal .slides section:has(> .anim) {
+	padding: 0;
+}
+
+.reveal .anim {
+	position: absolute;
+	inset: 0;
+	/* Frame z-indexes grow with every beat; keep them below the slide title. */
+	isolation: isolate;
+}
+
+.reveal .anim > .anim-frame {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	max-height: none;
+	margin: 0;
+	object-fit: contain;
+	opacity: 0;
+}
+
+.reveal .anim > .anim-frame.active {
+	opacity: 1;
+}
+
+.reveal .anim-missing {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--bad);
+	font-family: var(--r-code-font);
+	font-size: 0.7em;
+	border: 4px dashed var(--bad);
+}
+
+.reveal .anim-step {
+	display: none;
+}
+
+/* ---------------------------------------------------------------------------
+   Title slide.
+   --------------------------------------------------------------------------- */
+
+.reveal .slides section.title-slide {
+	height: 100%;
+	box-sizing: border-box;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 1em;
+}
+
+.reveal .title-slide h1 {
+	font-size: 1.75em;
+	text-wrap: balance;
+	line-height: 1.15;
+	margin: 0 0 0.5em;
+}
+
+.reveal .title-slide .authors {
+	font-size: 0.72em;
+	line-height: 1.5;
+	color: var(--muted);
+}
+
+.reveal .title-slide .authors .speaker {
+	font-size: 1.25em;
+	color: var(--ink);
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-thickness: 0.08em;
+	text-underline-offset: 0.18em;
+}
+
+/* Keeps the first author line on one line in the narrower deck. */
+.aspect-4-3 .reveal .title-slide .authors {
+	font-size: 0.62em;
+}
+
+.reveal .title-slide .venue {
+	margin-top: 1.1em;
+	font-size: 0.72em;
+	color: var(--ink);
+	font-weight: 600;
+}
+
+.reveal .title-slide .code-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2em;
+	margin: 0.1em 0 0.7em;
+	padding: 0.4em 0.9em 0.5em;
+	border: 3px solid var(--ink);
+	border-radius: 0.4em;
+}
+
+.reveal .title-slide .code-link span {
+	font-size: 0.55em;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted);
+}
+
+.reveal .title-slide .code-link a,
+.reveal .title-slide .code-link code {
+	color: var(--ink);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.reveal .title-slide .emblem {
+	width: 3.4em;
+	margin-bottom: 0.7em;
+}
+
+/* ---------------------------------------------------------------------------
+   Statement slides: one sentence, large.
+   --------------------------------------------------------------------------- */
+
+.reveal .statement {
+	font-size: 1.22em;
+	line-height: 1.35;
+	font-weight: 600;
+	text-align: left;
+	max-width: 22em;
+	margin: 0 auto;
+}
+
+.reveal .statement .verifier {
+	color: var(--verifier);
+}
+
+.reveal .statement .runtime {
+	color: var(--runtime);
+}
+
+.reveal .statement .small {
+	display: block;
+	margin-top: 0.9em;
+	font-size: 0.62em;
+	font-weight: 500;
+	color: var(--muted);
+}
+
+/* Numbered takeaways. */
+.reveal ol.takeaways {
+	display: block;
+	text-align: left;
+	margin: 0 auto;
+	max-width: 24em;
+	font-size: 0.92em;
+	line-height: 1.3;
+	counter-reset: takeaway;
+	list-style: none;
+	padding: 0;
+}
+
+.reveal ol.takeaways > li {
+	counter-increment: takeaway;
+	position: relative;
+	padding-left: 1.6em;
+	margin: 0 0 0.75em;
+}
+
+.reveal ol.takeaways > li::before {
+	content: counter(takeaway);
+	position: absolute;
+	left: 0;
+	top: 0.12em;
+	width: 1.15em;
+	height: 1.15em;
+	line-height: 1.15em;
+	border-radius: 50%;
+	background: var(--ink);
+	color: #fff;
+	font-size: 0.85em;
+	font-weight: 700;
+	text-align: center;
+}
+
+.reveal .aside-line {
+	font-size: 0.66em;
+	color: var(--muted);
+	text-align: left;
+	max-width: 36em;
+	margin: 0.4em auto 0;
+}
+
+/* Plain bullets: few, short, large. */
+.reveal .slides section ul {
+	display: block;
+	text-align: left;
+	margin: 0 auto;
+	line-height: 1.35;
+}
+
+.reveal .slides section ul li {
+	margin: 0.35em 0;
+}
+
+.reveal .muted {
+	color: var(--muted);
+}
+
+/* ---------------------------------------------------------------------------
+   Backup slides and tables.
+   --------------------------------------------------------------------------- */
+
+.reveal .slides section.backup::after {
+	content: 'backup';
+	position: absolute;
+	top: 0.55em;
+	right: 0.8em;
+	font-size: 0.45em;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--muted);
+	border: 2px solid var(--rule);
+	border-radius: 0.3em;
+	padding: 0.1em 0.45em;
+}
+
+.reveal table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	font-size: 0.6em;
+	font-variant-numeric: tabular-nums;
+}
+
+.reveal table th,
+.reveal table td {
+	padding: 0.28em 0.7em;
+	border-bottom: 2px solid var(--rule);
+	text-align: right;
+}
+
+.reveal table th {
+	border-bottom: 3px solid var(--ink);
+	font-weight: 700;
+}
+
+.reveal table td:first-child,
+.reveal table th:first-child {
+	text-align: left;
+}
+
+.reveal .table-caption {
+	font-size: 0.55em;
+	color: var(--muted);
+	margin-top: 0.8em;
+	text-align: center;
+}
+
+/* ---------------------------------------------------------------------------
+   Chrome: unobtrusive slide number and progress bar.
+   --------------------------------------------------------------------------- */
+
+.reveal .slide-number {
+	background: transparent;
+	color: var(--muted);
+	font-family: var(--r-main-font);
+	font-size: 18px;
+	font-weight: 600;
+	bottom: 10px;
+	right: 14px;
+}
+
+.reveal .progress {
+	color: var(--ink);
+	background: transparent;
+	height: 4px;
+}

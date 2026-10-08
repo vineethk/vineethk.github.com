@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="data:," />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Defense-in-Depth Runtime Safety in Move</title>
+		<meta name="description" content="Talk slides, Runtime Verification 2026: runtime type, ability, and reference safety checks in the Move VM on Aptos." />
+		<meta property="og:title" content="Defense-in-Depth Runtime Safety in Move" />
+		<meta property="og:description" content="Talk slides, Runtime Verification 2026: runtime type, ability, and reference safety checks in the Move VM on Aptos." />
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/white.css" />
+		<link rel="stylesheet" href="css/safety26.css" />
+		<style>
+			/* Keep the navigation arrows clear of the slide number. */
+			.reveal .controls {
+				right: 56px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown data-separator="^\r?\n---\r?\n$" data-separator-vertical="^\r?\n--\r?\n$">
+					<textarea data-template>
+&lt;!-- .slide: class="title-slide" --&gt;
+
+&lt;svg class="emblem" viewBox="0 0 120 120" aria-hidden="true"&gt;
+	&lt;g transform="translate(36 60) matrix(0.55 -0.35 0 1 0 0)"&gt;
+		&lt;rect x="-22" y="-37" width="44" height="74" rx="6" fill="#e8c35a" stroke="#9c7a22" stroke-width="2"&gt;&lt;/rect&gt;
+		&lt;circle cx="-7.7" cy="-20.4" r="5" fill="#fff" stroke="#9c7a22" stroke-width="1.5"&gt;&lt;/circle&gt;
+		&lt;circle cx="6.6" cy="1.9" r="6" fill="#fff" stroke="#9c7a22" stroke-width="1.5"&gt;&lt;/circle&gt;
+		&lt;circle cx="-3.3" cy="22.9" r="4.5" fill="#fff" stroke="#9c7a22" stroke-width="1.5"&gt;&lt;/circle&gt;
+	&lt;/g&gt;
+	&lt;g transform="translate(84 60) matrix(0.55 -0.35 0 1 0 0)"&gt;
+		&lt;rect x="-22" y="-37" width="44" height="74" rx="6" fill="#e8c35a" stroke="#9c7a22" stroke-width="2"&gt;&lt;/rect&gt;
+		&lt;circle cx="6.6" cy="-25.9" r="4.5" fill="#fff" stroke="#9c7a22" stroke-width="1.5"&gt;&lt;/circle&gt;
+		&lt;circle cx="-5.5" cy="-11.1" r="5" fill="#fff" stroke="#9c7a22" stroke-width="1.5"&gt;&lt;/circle&gt;
+		&lt;circle cx="5.5" cy="13" r="5" fill="#fff" stroke="#9c7a22" stroke-width="1.5"&gt;&lt;/circle&gt;
+	&lt;/g&gt;
+	&lt;g stroke="#dc2626" stroke-width="3" stroke-linecap="round" fill="#dc2626"&gt;
+		&lt;line x1="2" y1="59.6" x2="42.2" y2="59.6"&gt;&lt;/line&gt;
+		&lt;line x1="48.1" y1="59.6" x2="75.5" y2="59.6"&gt;&lt;/line&gt;
+		&lt;polygon points="82,59.6 75,55.6 75,63.6" stroke-width="1"&gt;&lt;/polygon&gt;
+		&lt;line x1="84.5" y1="57.6" x2="89" y2="56" stroke-width="2"&gt;&lt;/line&gt;
+		&lt;line x1="84.5" y1="61.6" x2="89" y2="63.2" stroke-width="2"&gt;&lt;/line&gt;
+		&lt;line x1="83" y1="64.5" x2="84.5" y2="69" stroke-width="2"&gt;&lt;/line&gt;
+		&lt;line x1="83" y1="54.7" x2="84.5" y2="50.2" stroke-width="2"&gt;&lt;/line&gt;
+	&lt;/g&gt;
+&lt;/svg&gt;
+
+# Defense-in-Depth Runtime Safety in Move
+
+&lt;div class="authors"&gt;
+Victor Gao · Wolfgang Grieskamp · &lt;span class="speaker"&gt;Vineeth Kashyap&lt;/span&gt; · George Mitenkov&lt;br&gt;
+Teng Zhang · Runtian Zhou · Andrea Cappa · Marco Ilardi
+&lt;/div&gt;
+
+&lt;div class="venue"&gt;Aptos Labs &amp;nbsp;·&amp;nbsp; Runtime Verification 2026&lt;/div&gt;
+
+---
+
+## Aptos blockchain
+
+&lt;div class="anim" data-anim="s02_aptos"&gt;&lt;/div&gt;
+
+---
+
+## Permissionless
+
+&lt;div class="anim" data-anim="s02b_permissionless"&gt;&lt;/div&gt;
+
+---
+
+## Move: typed resources with abilities
+
+&lt;div class="anim" data-anim="s04_abilities"&gt;&lt;/div&gt;
+
+---
+
+## Move: modular encapsulation
+
+&lt;div class="anim" data-anim="s05a_encapsulation"&gt;&lt;/div&gt;
+
+---
+
+## Move: aliasing rules
+
+&lt;div class="anim" data-anim="s05b_aliasing"&gt;&lt;/div&gt;
+
+---
+
+## Move: Rust-like aliasing
+
+&lt;div class="anim" data-anim="s05b_rust_compare"&gt;&lt;/div&gt;
+
+---
+
+## Move: execution pipeline
+
+&lt;div class="anim" data-anim="s05c_verification"&gt;&lt;/div&gt;
+
+---
+
+## Bytecode verification
+
+&lt;div class="anim" data-anim="s05d_borrow_graphs"&gt;&lt;/div&gt;
+
+---
+
+## A single point of failure
+
+&lt;div class="anim" data-anim="s06_single_slice"&gt;&lt;/div&gt;
+
+---
+
+## Defense in depth: an independent second layer
+
+&lt;div class="anim" data-anim="s07_two_slices"&gt;&lt;/div&gt;
+
+---
+
+&lt;div class="statement"&gt;
+Re-check the static &lt;span class="verifier"&gt;verifier's&lt;/span&gt; guarantees with an independent &lt;span class="runtime"&gt;runtime monitor&lt;/span&gt;.
+&lt;span class="small"&gt;Move on Aptos is the only production VM that pairs a static verifier with a runtime safety layer.&lt;/span&gt;
+&lt;span class="small"&gt;The runtime monitor is more precise with no false positives.&lt;/span&gt;
+&lt;/div&gt;
+
+---
+
+## Runtime type and ability checking
+
+&lt;div class="anim" data-anim="s08b_runtime_checks"&gt;&lt;/div&gt;
+
+---
+
+## Type confusion: forging a capability
+
+&lt;div class="anim" data-anim="s08_type_confusion"&gt;&lt;/div&gt;
+
+---
+
+## Enums turn aliasing bugs into type confusion
+
+&lt;div class="anim" data-anim="s11_enum_alias"&gt;&lt;/div&gt;
+
+---
+
+## Type safety requires
+
+&lt;div class="anim" data-anim="s11b_requirement"&gt;&lt;/div&gt;
+
+---
+
+## An enum aliasing exploit
+
+&lt;div class="anim" data-anim="s11c_enum_exploit"&gt;&lt;/div&gt;
+
+---
+
+## An enum aliasing exploit
+
+&lt;div class="anim" data-anim="s11d_verifier_bug"&gt;&lt;/div&gt;
+
+---
+
+## Reference counting does not work
+
+&lt;div class="anim" data-anim="s12_temp_alias"&gt;&lt;/div&gt;
+
+---
+
+## Runtime reference safety: shadow semantics
+
+&lt;div class="anim" data-anim="s13_shadow"&gt;&lt;/div&gt;
+
+---
+
+## Runtime reference safety
+
+&lt;div class="anim" data-anim="s13b_executed_path"&gt;&lt;/div&gt;
+
+---
+
+## References point into trees of places
+
+&lt;div class="anim" data-anim="s14_place_trees"&gt;&lt;/div&gt;
+
+---
+
+## Lazy poisoning
+
+&lt;div class="anim" data-anim="s15_poison"&gt;&lt;/div&gt;
+
+---
+
+## Replay: the valid program
+
+&lt;div class="anim" data-anim="s16_replay_valid"&gt;&lt;/div&gt;
+
+---
+
+## Replay: the exploit
+
+&lt;div class="anim" data-anim="s17_replay_exploit"&gt;&lt;/div&gt;
+
+---
+
+## Compositional across calls
+
+&lt;div class="anim" data-anim="s18_calls"&gt;&lt;/div&gt;
+
+---
+
+## A relaxed semantics of the borrow checker
+
+&lt;div class="anim" data-anim="s19_relaxed"&gt;&lt;/div&gt;
+
+---
+
+&lt;!-- .slide: class="title-slide" --&gt;
+
+# Defense-in-Depth Runtime Safety in Move
+
+&lt;div class="code-link"&gt;
+&lt;span&gt;open source&lt;/span&gt;
+&lt;a href="https://github.com/aptos-labs/aptos-core"&gt;&lt;code&gt;github.com/aptos-labs/aptos-core&lt;/code&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="authors"&gt;&lt;code&gt;vineeth@aptoslabs.com&lt;/code&gt;&lt;/div&gt;
+
+&lt;div class="venue"&gt;Thank you! &amp;nbsp;·&amp;nbsp; Questions?&lt;/div&gt;
+</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/markdown.js"></script>
+		<script src="media/anims.js?v=1791475425"></script>
+		<script src="js/anim.js"></script>
+		<script>
+			// ?aspect=4:3 reflows the deck for a 4:3 screen; ?print-pdf&steps prints one page per click.
+			const params = new URLSearchParams(location.search);
+			const narrow = params.get('aspect') === '4:3';
+			document.documentElement.classList.toggle('aspect-4-3', narrow);
+
+			Reveal.initialize({
+				width: narrow ? 960 : 1280,
+				height: 720,
+				margin: 0,
+				maxScale: 4,
+				center: false,
+				hash: true,
+				controls: true,
+				progress: true,
+				slideNumber: 'c',
+				transition: 'none',
+				backgroundTransition: 'none',
+				pdfSeparateFragments: params.has('steps'),
+				// Markdown must build the slides before anim scans them.
+				plugins: [RevealMarkdown, RevealAnim],
+			});
+		</script>
+	</body>
+</html>
